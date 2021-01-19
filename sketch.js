@@ -57,6 +57,10 @@ function draw() {
 function mouseReleased(){
 	sling.fly()
 }
+function mouseDragged(){
+
+  Matter.Body.setPosition(stone.body,{x:mouseX,y:mouseY})
+}
 function keyPressed(){
 if(keyCode===32){
 	Matter.Body.setPosition(stone.body,{x:230,y:425})
